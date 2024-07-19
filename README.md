@@ -4,7 +4,7 @@
 <h1>Spring Boot and MySQL Filter and Sort API</h1>
 
 <h2>Objective</h2>
-<p>Create a Spring Boot application that interacts with a MySQL database to provide an API that filters and sorts product records based on specified parameters.</p>
+<p>A Spring Boot application that interacts with a MySQL database to provide an API that filters and sorts product records based on specified parameters.</p>
 
 <h2>Setup</h2>
 <ol>
@@ -30,6 +30,7 @@ mvn spring-boot:run</code></pre>
 
 <h2>API Endpoints</h2>
 
+<h3>Post /products</h3>
 <h3>GET /products</h3>
 <p>Fetch products with optional filtering and sorting.</p>
 
@@ -43,6 +44,7 @@ mvn spring-boot:run</code></pre>
     <li><code>sortOrder</code> (optional): The sort order (<code>asc</code> or <code>desc</code>). Default is <code>asc</code>.</li>
 </ul>
 
+<h4>Server Port = 8811</h4>
 <h4>Example Request</h4>
 <pre><code>GET /products?category=electronics&minPrice=100&maxPrice=1000&inStock=true&sortField=price&sortOrder=asc</code></pre>
 
@@ -100,20 +102,7 @@ mvn spring-boot:run</code></pre>
         <li><code>repository/</code>: Spring Data JPA repositories</li>
         <li><code>service/</code>: Service layer</li>
     </ul>
-    <li><code>src/main/resources/</code>: Configuration files</li>
+
 </ul>
-
-<h2>Testing</h2>
-<p>Write unit tests to verify the functionality of your filtering and sorting logic. Use <code>JUnit</code> and <code>Spring Boot Test</code> for writing test cases.</p>
-
-<h2>Additional Tips</h2>
-<ul>
-    <li>Ensure your code is well-documented and follows best practices.</li>
-    <li>Keep the code simple and well-organized to demonstrate understanding of basic concepts.</li>
-    <li>Focus on writing clear and maintainable code.</li>
-    <li>Include comments explaining the purpose of key sections of the code.</li>
-    <li>Provide a brief explanation of your approach and any challenges faced during development.</li>
-</ul>
-
 </body>
 </html>
